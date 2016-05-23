@@ -4,10 +4,10 @@ MAINTAINER Fabio Filli <dev@fabiofilli.com>
 ENV ELM_VERSION = 0.17
 
 RUN apt-get update && apt-get install -y
-    \ curl
-    \ git
-    \ libtinfo-dev
-    \ nodejs
+    curl \
+    git \
+    libtinfo-dev \
+    zlib1g-dev
 
 ENV PATH /opt/Elm-Platform/$ELM_VERSION/.cabal-sandbox/bin:$PATH
 WORKDIR /opt
